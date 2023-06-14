@@ -1,0 +1,463 @@
+{
+  "dynamic_templates": [
+    {
+      "id_as_keyword": {
+        "match": "*_id",
+        "mapping": {
+          "type": "keyword",
+          "doc_values": false,
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "Id_as_keyword": {
+        "match": "*Id",
+        "mapping": {
+          "type": "keyword",
+          "doc_values": false,
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "state_as_keyword": {
+        "match": "*_state",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "type_as_keyword": {
+        "match": "*type",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "role_as_keyword": {
+        "match": "*role",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase",
+          "fields": {
+            "original": {
+              "type": "keyword",
+              "doc_values": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "distribution_company_as_keyword": {
+        "path_match": "data.distribution_company.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase",
+          "fields": {
+            "original": {
+              "type": "keyword",
+              "doc_values": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "original_country_as_keyword": {
+        "path_match": "data.original_country.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "original_language_as_keyword": {
+        "path_match": "data.original_language.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "external_mappings_as_keyword": {
+        "path_match": "data.external_mappings.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "original_network_as_keyword": {
+        "path_match": "data.original_network.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase",
+          "fields": {
+            "original": {
+              "type": "keyword",
+              "doc_values": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "release_type_as_keyword": {
+        "path_match": "data.release_type.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "social_page_value_as_keyword": {
+        "path_match": "data.social_pages.*.value",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    {
+      "production_company_as_keyword": {
+        "path_match": "data.production_company.*",
+        "mapping": {
+          "type": "keyword",
+          "normalizer": "lowercase",
+          "fields": {
+            "original": {
+              "type": "keyword",
+              "doc_values": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "dates_as_date": {
+        "path_match": "dates.*",
+        "mapping": {
+          "type": "date"
+        }
+      }
+    },
+    {
+      "on_as_date": {
+        "match": "*_on",
+        "mapping": {
+          "type": "date"
+        }
+      }
+    },
+    {
+      "from_as_date": {
+        "match": "*_from",
+        "mapping": {
+          "type": "date"
+        }
+      }
+    },
+    {
+      "date_as_date": {
+        "match": "*_date",
+        "mapping": {
+          "type": "date"
+        }
+      }
+    },
+    {
+      "demand_as_float": {
+        "path_match": "demand.*",
+        "mapping": {
+          "type": "float"
+        }
+      }
+    },
+    {
+      "total_as_integer": {
+        "match": "total_*",
+        "mapping": {
+          "type": "long"
+        }
+      }
+    },
+    {
+      "default_as_text_only": {
+        "path_match": "data.*",
+        "match_mapping_type": "string",
+        "mapping": {
+          "type": "text"
+        }
+      }
+    }
+  ],
+  "properties": {
+    "images": {
+      "type": "object",
+      "enabled": false
+    },
+    "extended": {
+      "type": "object",
+      "enabled": false
+    },
+    "internal_data": {
+      "type": "object",
+      "enabled": false
+    },
+    "data": {
+      "properties": {
+        "total_seasons" : {
+          "type" : "integer"
+        },
+        "cast": {
+          "type": "object",
+          "enabled": false
+        },
+        "crew": {
+          "type": "object",
+          "enabled": false
+        },
+        "datasource_mappings": {
+          "type": "object",
+          "enabled": false
+        },
+        "description_lang": {
+          "type": "object",
+          "enabled": false
+        },
+        "cast_members": {
+          "properties": {
+            "name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "crew_members": {
+          "properties": {
+            "name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "directors": {
+          "properties": {
+            "Name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "editors": {
+          "properties": {
+            "Name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "producers": {
+          "properties": {
+            "Name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "writers": {
+          "properties": {
+            "Name": {
+              "type": "text",
+              "fields": {
+                "search": {
+                  "type": "search_as_you_type"
+                }
+              }
+            }
+          }
+        },
+        "in_air": {
+          "type": "boolean"
+        },
+        "in_production": {
+          "type": "boolean"
+        },
+        "manual_show": {
+          "type": "boolean"
+        },
+        "genre_tags": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        },
+        "keywords": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        },
+        "status": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        },
+        "subject": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        },
+        "tag": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        },
+        "awards": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "date"
+            },
+            "won": {
+              "type": "boolean"
+            },
+            "nominated": {
+              "type": "boolean"
+            }
+          }
+        },
+        "daysBetweenRelease": {
+          "type": "long"
+        },
+        "release_year": {
+          "type": "long"
+        },
+        "overall_rank": {
+          "type": "long"
+        },
+        "also_known_as": {
+          "type": "text",
+          "fields": {
+            "search": {
+              "type": "search_as_you_type"
+            }
+          }
+        },
+        "main_genre": {
+          "type": "text",
+          "fields": {
+            "search": {
+              "type": "search_as_you_type"
+            },
+            "keyword": {
+              "type": "keyword",
+              "normalizer": "lowercase"
+            }
+          }
+        },
+        "sub_genre": {
+          "type": "text",
+          "fields": {
+            "search": {
+              "type": "search_as_you_type"
+            },
+            "keyword": {
+              "type": "keyword",
+              "normalizer": "lowercase"
+            }
+          }
+        },
+        "setting": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "normalizer": "lowercase"
+            }
+          }
+        },
+        "theme": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "normalizer": "lowercase"
+            }
+          }
+        },
+        "time_period": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "normalizer": "lowercase"
+            }
+          }
+        }
+      }
+    },
+    "slug": {
+      "type": "keyword",
+      "normalizer": "lowercase"
+    },
+    "display_name": {
+      "type": "text",
+      "fields": {
+        "search": {
+          "type": "search_as_you_type"
+        },
+        "keyword": {
+          "type": "keyword",
+          "normalizer": "lowercase"
+        }
+      }
+    },
+    "title": {
+      "type": "text",
+      "fields": {
+        "search": {
+          "type": "search_as_you_type"
+        },
+        "keyword": {
+          "type": "keyword",
+          "normalizer": "lowercase",
+          "doc_values": false
+        }
+      }
+    },
+    "short_id": {
+      "type": "keyword",
+      "doc_values": false,
+      "fields": {
+        "long": {
+          "type": "long",
+          "coerce": true
+        }
+      }
+    }
+  }
+}

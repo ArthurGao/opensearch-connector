@@ -1,0 +1,116 @@
+[
+  {
+    "updated_on": "2022-06-10T03:18:45Z",
+    "catalog_state": "client_ready",
+    "images": {
+      "banner": "Not Present",
+      "chart": "Not Present",
+      "poster": "Not Present"
+    },
+    "data": {
+      "short_description": "test data",
+      "original_language": {
+        "0": "en"
+      },
+      "sub_genre": "Cooking Reality",
+      "external_mappings": {
+      },
+      "release_year": 2032,
+      "daysBetweenRelease": 0.0,
+      "original_network": {
+        "0": "Discovery+"
+      },
+      "manual_show": false,
+      "long_description": "This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "genre_tags": [
+        "food"
+      ],
+      "type": "Show",
+      "total_seasons": 2,
+      "main_genre": "Reality",
+      "total_episodes": "12",
+      "sub_type": "Series",
+      "ratings": {
+      },
+      "in_air": false,
+      "tv_series_type": "unscripted",
+      "tag": "tv",
+      "in_production": false,
+      "status": "RETURNING",
+      "start_date": "2018-10-07"
+    },
+    "created_on": "2022-05-15T21:56:30Z",
+    "catalog_type": "demand",
+    "arthur_id": "pid-3333333",
+    "dates": {
+      "updated_on": null,
+      "onboarded_on": "2022-05-19",
+      "ratings_available_from": "2022-05-22"
+    },
+    "short_id": 3333333,
+    "display_name": "Do NOT Try Asia",
+    "title": "let us try asia",
+    "slug": "letus-try-asia",
+    "@timestamp": "2022-06-10T03:18:47.884980",
+    "@SequenceNumber": "1850646600000000030434961300",
+    "demand": {
+    }
+  },
+  {
+    "updated_on": "2022-06-10T01:18:45Z",
+    "catalog_state": "client_ready",
+    "images": {
+      "banner": "Not Present",
+      "chart": "Not Present",
+      "poster": "Not Present"
+    },
+    "data": {
+      "short_description": "Food Hero winner Sarah Benjamin and the ever-innovative Chef Malcolm Goh travel across Asia's most popular capitals and tuck in the city's signature dishes. This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "original_language": {
+        "0": "en"
+      },
+      "sub_genre": "Cooking Reality",
+      "external_mappings": {
+      },
+      "release_year": 2018,
+      "daysBetweenRelease": 0.0,
+      "original_network": {
+        "0": "Discovery+"
+      },
+      "manual_show": false,
+      "long_description": "Food Hero winner Sarah Benjamin and the ever-innovative Chef Malcolm Goh travel across Asia's most popular capitals and tuck in the city's signature dishes. This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "genre_tags": [
+        "food"
+      ],
+      "type": "Show",
+      "total_seasons": 2,
+      "main_genre": "Reality",
+      "total_episodes": "12",
+      "sub_type": "Series",
+      "ratings": {
+      },
+      "in_air": false,
+      "tv_series_type": "unscripted",
+      "tag": "tv",
+      "in_production": false,
+      "status": "RETURNING",
+      "start_date": "2018-10-07"
+    },
+    "created_on": "2022-05-15T21:56:30Z",
+    "catalog_type": "demand",
+    "arthur_id": "43c2aeb3-8971-496d-aca6-66f06ee46067",
+    "dates": {
+      "updated_on": null,
+      "onboarded_on": "2022-05-19",
+      "ratings_available_from": "2022-05-22"
+    },
+    "short_id": 123456,
+    "display_name": "Must Try Asia",
+    "title": "must try asia",
+    "slug": "must-try-asia",
+    "@timestamp": "2022-06-10T03:18:47.884980",
+    "@SequenceNumber": "1850646600000000030434961300",
+    "demand": {
+    }
+  }
+]

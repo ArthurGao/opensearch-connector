@@ -1,0 +1,275 @@
+[
+  {
+    "updated_on": "2022-06-10T03:18:45Z",
+    "catalog_state": "client_ready",
+    "images": {
+      "banner": "Not Present",
+      "chart": "Not Present",
+      "poster": "Not Present"
+    },
+    "data": {
+      "short_description": "test data",
+      "original_language": {
+        "0": "en"
+      },
+      "sub_genre": "Cooking Reality",
+      "external_mappings": {
+      },
+      "release_year": 2032,
+      "daysBetweenRelease": 0.0,
+      "original_network": {
+        "0": "Discovery+"
+      },
+      "manual_show": false,
+      "long_description": "This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "genre_tags": [
+        "food"
+      ],
+      "type": "Show",
+      "total_seasons": 1,
+      "main_genre": "Reality",
+      "total_episodes": "12",
+      "sub_type": "Series",
+      "ratings": {
+      },
+      "in_air": false,
+      "tv_series_type": "unscripted",
+      "tag": "tv",
+      "in_production": false,
+      "status": "RETURNING",
+      "start_date": "2018-10-07"
+    },
+    "created_on": "2022-05-15T21:56:30Z",
+    "catalog_type": "demand",
+    "arthur_id": "pid-3333333",
+    "dates": {
+      "updated_on": null,
+      "onboarded_on": "2022-05-19",
+      "ratings_available_from": "2022-05-22"
+    },
+    "short_id": 3333333,
+    "display_name": "Do NOT Try Asia",
+    "title": "let us try asia",
+    "slug": "letus-try-asia",
+    "@timestamp": "2022-06-10T03:18:47.884980",
+    "@SequenceNumber": "1850646600000000030434961300",
+    "demand": {
+    }
+  },
+  {
+    "updated_on": "2022-06-10T03:18:45Z",
+    "catalog_state": "client_ready",
+    "images": {
+      "banner": "Not Present",
+      "chart": "Not Present",
+      "poster": "Not Present"
+    },
+    "data": {
+      "short_description": "Food Hero winner Sarah Benjamin and the ever-innovative Chef Malcolm Goh travel across Asia's most popular capitals and tuck in the city's signature dishes. This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "original_language": {
+        "0": "en"
+      },
+      "sub_genre": "Cooking Reality",
+      "external_mappings": {
+      },
+      "release_year": 2018,
+      "daysBetweenRelease": 0.0,
+      "original_network": {
+        "0": "Discovery+"
+      },
+      "manual_show": false,
+      "long_description": "Food Hero winner Sarah Benjamin and the ever-innovative Chef Malcolm Goh travel across Asia's most popular capitals and tuck in the city's signature dishes. This adventurous duo shows how creative people can be in re-creating these iconic dishes at home.",
+      "genre_tags": [
+        "food"
+      ],
+      "type": "Show",
+      "total_seasons": 2,
+      "main_genre": "Reality",
+      "total_episodes": "12",
+      "sub_type": "Series",
+      "ratings": {
+      },
+      "in_air": false,
+      "tv_series_type": "unscripted",
+      "tag": "tv",
+      "in_production": false,
+      "status": "RETURNING",
+      "start_date": "2018-10-07"
+    },
+    "created_on": "2022-05-15T21:56:30Z",
+    "catalog_type": "demand",
+    "arthur_id": "43c2aeb3-8971-496d-aca6-66f06ee46067",
+    "dates": {
+      "updated_on": null,
+      "onboarded_on": "2022-05-19",
+      "ratings_available_from": "2022-05-22"
+    },
+    "short_id": 123456,
+    "display_name": "Must Try Asia",
+    "title": "must try asia",
+    "slug": "must-try-asia",
+    "@timestamp": "2022-06-10T03:18:47.884980",
+    "@SequenceNumber": "1850646600000000030434961300",
+    "demand": {
+    }
+  },
+  {
+    "updated_on": "2022-06-08T05:34:59Z",
+    "catalog_state": "metadata_ready",
+    "images": {
+      "banner": "Not Present",
+      "chart": "Not Present",
+      "poster": "Not Present"
+    },
+    "data": {
+      "original_language": {
+        "0": "de",
+        "1": "en",
+        "2": "it",
+        "3": "fr"
+      },
+      "originals_grouping": [
+        null
+      ],
+      "keywords": [],
+      "directors": [
+        {
+          "role": "director",
+          "imdb_id": "nm2646952",
+          "name": "Felix Karrer"
+        },
+        {
+          "role": "director",
+          "imdb_id": "nm1988776",
+          "name": "Thomas Jenatsch"
+        },
+        {
+          "role": "director",
+          "imdb_id": "nm0127301",
+          "name": "Patrick Bürge"
+        },
+        {
+          "role": "director",
+          "imdb_id": "nm0480833",
+          "name": "Frédéric Laffont"
+        },
+        {
+          "role": "director",
+          "imdb_id": "nm2021133",
+          "name": "Katrin Oettli"
+        },
+        {
+          "role": "director",
+          "imdb_id": "nm3527508",
+          "name": "Mark Galloway"
+        }
+      ],
+      "external_mappings": {
+        "imdb_id": "tt8702286"
+      },
+      "crew_members": [
+        {
+          "role": "cinematographer",
+          "name": "Felix Karrer"
+        }
+      ],
+      "genre_tags": [
+        "documentary"
+      ],
+      "type": "show",
+      "production_company": {
+        "0": "Filme für eine Welt",
+        "1": "Fondation Education 21"
+      },
+      "characters": [
+        "Self"
+      ],
+      "in_air": true,
+      "distribution_company": {
+        "0": "Filme für eine Welt"
+      },
+      "tag": "tv",
+      "editors": [
+        {
+          "imdb_id": "nm1804562",
+          "name": "Rosmarie Schaub"
+        }
+      ],
+      "also_known_as": [
+        "Aide, développement autonome, responsabilité: la coopération au développement, comment ça marche?",
+        "Hilfe, Selbsthilfe, Verantwortung: Wie funktioniert Entwicklungszusammenarbeit?",
+        "Aiuto, sviluppo autonomo, responsabilità: come funziona la cooperazione allo sviluppo?"
+      ],
+      "cast_members": [
+        {
+          "character": "Self",
+          "role": "Actor",
+          "imdb_id": "nm9976352",
+          "name": "Saïd"
+        }
+      ],
+      "release_year": "2003",
+      "daysBetweenRelease": 0.0,
+      "original_network": {
+        "0": "Filme für eine Welt"
+      },
+      "manual_show": false,
+      "writers": [
+        {
+          "imdb_id": "nm2646952",
+          "name": "Felix Karrer"
+        },
+        {
+          "role": "creator",
+          "imdb_id": "nm9974835",
+          "name": "Dorothee Lanz"
+        },
+        {
+          "imdb_id": "nm3526994",
+          "name": "David Syz"
+        },
+        {
+          "imdb_id": "nm0480833",
+          "name": "Frédéric Laffont"
+        },
+        {
+          "imdb_id": "nm3527508",
+          "name": "Mark Galloway"
+        },
+        {
+          "imdb_id": "nm1127394",
+          "name": "Sonja Schenkel"
+        }
+      ],
+      "total_seasons": 6,
+      "total_episodes": "7",
+      "producers": [
+        {
+          "role": "executive producer",
+          "imdb_id": "nm9974835",
+          "name": "Dorothee Lanz"
+        },
+        {
+          "role": "producer",
+          "imdb_id": "nm3526994",
+          "name": "David Syz"
+        },
+        {
+          "role": "producer",
+          "imdb_id": "nm2312667",
+          "name": "Patrick Müller"
+        }
+      ],
+      "original_country": {
+        "0": "CH"
+      },
+      "in_production": false
+    },
+    "internal_data": {},
+    "catalog_type": "supply",
+    "arthur_id": "b90a51b3-5f4a-4f8e-99fc-2bbaf7011710",
+    "short_id": 4164454710.0,
+    "display_name": "aide, développement autonome, responsabilité: la coopération au développement, comment ça marche?",
+    "title": "aide, développement autonome, responsabilité: la coopération au développement, comment ça marche?"
+  }
+]

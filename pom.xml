@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.arthur</groupId>
+  <artifactId>opensearch-connector</artifactId>
+  <version>1.2.2</version>
+  <packaging>jar</packaging>
+  <name>OpenSearch Connector</name>
+  <description>Library to encapsulate interactions with OpenSearch</description>
+
+  <parent>
+    <groupId>com.arthur</groupId>
+    <artifactId>corelibs-parent</artifactId>
+    <version>4.0.5</version>
+  </parent>
+
+  <properties>
+    <arthur.common-utils.version>1.1.0</arthur.common-utils.version>
+    <!-- 3rd party library versions -->
+    <org.opensearch.client.version>2.3.0</org.opensearch.client.version>
+    <junit5-jupiter.version>5.7.2</junit5-jupiter.version>
+  </properties>
+
+  <dependencies>
+    <!-- open search -->
+    <dependency>
+      <groupId>org.opensearch.client</groupId>
+      <artifactId>opensearch-rest-high-level-client</artifactId>
+      <version>${org.opensearch.client.version}</version>
+    </dependency>
+
+    <!-- Logging -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.19.0</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- Utils -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.arthur</groupId>
+      <artifactId>common-utils</artifactId>
+      <version>${arthur.common-utils.version}</version>
+    </dependency>
+
+    <!-- Tests -->
+
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>testcontainers</artifactId>
+      <version>1.17.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>1.11.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.19.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>2.19.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.23.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- required to make test containers compatible with Mac M1 -->
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>arthur-s3-release</id>
+      <name>arthur S3 Maven Release Repository</name>
+      <url>s3://arthurrepo/release</url>
+    </repository>
+    <snapshotRepository>
+      <id>arthur-s3-snapshot</id>
+      <name>arthur S3 Maven Snapshot Repository</name>
+      <url>s3://arthurrepo/snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>arthur-s3-release</id>
+      <name>arthur S3 Maven Release Repository</name>
+      <url>s3://arthurrepo/release</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
+    <repository>
+      <id>arthur-s3-snapshot</id>
+      <name>arthur S3 Maven Snapshot Repository</name>
+      <url>s3://arthurrepo/snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+</project>
